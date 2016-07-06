@@ -7,5 +7,5 @@ Useful for deployments via `rsync`:
 ```bash
 $ eval $(ssh-agent -s)
 $ ssh-add <(echo "$SSH_PRIVATE_KEY")
-$ rsync -arzvce "ssh -o StrictHostKeyChekcing=no" --delete local/ user@remote:~/prod/
+$ rsync -arzvce "ssh -o StrictHostKeyChecking=no" --delete local/ user@remote:~/prod/
 ```
